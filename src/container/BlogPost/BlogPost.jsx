@@ -61,7 +61,7 @@ class BlogPost extends Component{
             listArtikel[indeksArtikel].body = body;
             this.setState({ listArtikel });
         }
-        else if (tittle && body){ // data belum ada pada server
+        else if (title && body){ // data belum ada pada server
             const uid = new Date().getTime().toString();
             const { listArtikel } = this.state;
             listArtikel.push({uid,title,body});
